@@ -35,7 +35,7 @@ Loop:
       brne Loop
 
 Stall:
-      ldi R16, cCounter ; load 8bit register with that constant
+      ldi R16, smallStall ; load 8bit register with that constant
 SecStall:
       dec R16 ; decrease counter by one  1 cycle
       brne SecStall ; branch if zero flag was not set in last instruction     2 cycles
